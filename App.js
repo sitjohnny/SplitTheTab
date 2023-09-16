@@ -1,17 +1,8 @@
 import { AppRegistry } from "react-native";
 import { name as appName } from "./app.json";
-import {
-  MD3DarkTheme as DefaultTheme,
-  PaperProvider,
-} from "react-native-paper";
+import { PaperProvider } from "react-native-paper";
 import App from "./src/App";
-
-const theme = {
-  ...DefaultTheme,
-  colors: {
-    ...DefaultTheme.colors,
-  },
-};
+import { theme } from "./theme";
 
 export default function Main() {
   return (
